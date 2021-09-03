@@ -1,8 +1,6 @@
 import React from 'react';
 
 export default function CardList(props) {
-    const {isNameBold} = props;
-
     return (
         <div className="bg-white shadow">
             <div className="max-w-2x1 mx-auto py-16 px-4 sm:py-24 lg:max-w-7x1 lg:px-8">
@@ -16,7 +14,7 @@ export default function CardList(props) {
                             <div>
                             <h3
                                 className={`${
-                                isNameBold ? "font-bold " : ""
+                                props.isNameBold ? "font-bold " : ""
                                 } text-sm text-gray-700`}>
                                     <span aria-hidden="true" className="absolute inset-0"/>
                                     {props.name}
